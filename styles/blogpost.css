@@ -1,0 +1,132 @@
+.container {
+  display: grid;
+  height: auto;
+  grid-template-columns: 2fr 9fr;
+  grid-template-rows: 1fr 3fr 3fr;
+}
+#box-header {
+  grid-area: 1/2/2/3;
+}
+#box-sidebar {
+  grid-area: 1/1/4/2;
+}
+#box-content {
+  grid-area: 2/2/4/3;
+}
+#fig {
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin: 12px;
+}
+.header-box {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #a77b67;
+}
+.main-header {
+  margin-top: 60px;
+}
+#date {
+  text-align: start;
+  text-decoration: underline;
+  font-size: small;
+  padding-left: 60px;
+}
+h3 {
+  font-style: italic;
+}
+.main-cnt {
+  text-align: justify;
+  line-height: 30px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.closure {
+  margin: 0 40px 0px 40px;
+}
+.btn-home {
+  background-color: #4e6355;
+  font-weight: bold;
+  color: rgb(229, 236, 241);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-home:hover {
+  background-color: #1b3123;
+}
+.home {
+  margin-top: 20px;
+}
+.container-2 {
+  margin: 0 auto;
+  padding: 0 40px 40px 40px;
+  text-align: justify;
+  line-height: 30px;
+}
+.sidebar {
+  background-color: rgb(182, 81, 101);
+  min-height: 100vh;
+}
+.author-av {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+#avatar {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.bio {
+  font-family: "Poppins";
+  text-align: justify;
+  padding: 0 20px 0 20px;
+
+  margin-top: 40px;
+}
+.icon {
+  width: 20px;
+}
+.social-media ul {
+  display: inline-flex;
+  padding-left: 50px;
+}
+.social-media li {
+  list-style: none;
+  padding: 0.5rem;
+}
+.social-media {
+  margin: 0 20px 0 20px;
+}
+@media (max-width: 700px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-columns: 100%;
+  }
+  #box-sidebar {
+    grid-area: 3/1/4/2;
+    min-height: 45vh;
+  }
+  #box-header {
+    grid-area: 1/1/2/2;
+  }
+  #box-content {
+    grid-area: 2/1/3/2;
+  }
+  .closure {
+    margin: 0 40px 50px 40px;
+  }
+  #fig {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 12px;
+  }
+}
