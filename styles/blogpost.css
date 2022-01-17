@@ -14,10 +14,16 @@
   grid-area: 2/2/4/3;
 }
 #fig {
-  float: left;
   height: 300px;
   width: 300px;
-  margin: 12px;
+}
+.figure {
+  float: left;
+  margin: 22px;
+  margin-bottom: 0;
+}
+#figcaption {
+  text-align: center;
 }
 .header-box {
   text-align: center;
@@ -32,9 +38,6 @@
   text-decoration: underline;
   font-size: small;
   padding-left: 60px;
-}
-h3 {
-  font-style: italic;
 }
 .main-cnt {
   text-align: justify;
@@ -124,9 +127,7 @@ h3 {
     margin: 0 40px 50px 40px;
   }
   #fig {
-    float: left;
     height: 200px;
     width: 200px;
-    margin: 12px;
   }
 }
