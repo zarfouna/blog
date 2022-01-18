@@ -23,11 +23,11 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 10px;
 }
 .nav-links li {
   list-style: none;
-  width: 150px;
+  width: 15vw;
   margin: 15px;
   padding: 15px;
   text-align: center;
@@ -39,7 +39,7 @@ nav {
 .main {
   margin: auto;
   padding: 3rem;
-  width: 900px;
+  width: 90vw;
   height: 80vh;
 }
 .img-card {
@@ -121,18 +121,28 @@ p {
   padding-left: 60px;
   justify-content: space-between;
 }
-@media (max-width: 700px) {
+.footer > .logo {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  nav {
+    width: 100vw;
+  }
   nav > .logo {
     display: none;
+  }
+  .nav-links {
+    justify-content: space-around;
+    width: 5vw;
   }
   .grid-card {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 3fr 2fr 1fr;
-    height: 100vh;
+    grid-template-rows: 4fr 3fr 1fr;
+    height: 100%;
   }
   .main {
-    width: 60vh;
+    width: 100%;
     margin: 0 auto;
     height: fit-content;
   }
@@ -141,6 +151,7 @@ p {
   }
   .actions {
     align-self: auto;
+    padding-top: 20px;
   }
   .img-card {
     border-radius: 12px 12px 0 0;
@@ -153,5 +164,8 @@ p {
   }
   #box-actions {
     grid-area: 3/1/4/2;
+  }
+  footer {
+    width: 100vw;
   }
 } ;
